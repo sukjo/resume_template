@@ -1,4 +1,4 @@
-@import url("/globalstyles.css");
+@import url("./globalstyles.css");
 
 * {
   margin: 0px;
@@ -214,6 +214,7 @@ ol.steps > li {
   width: var(--wayfinder-sz);
   height: var(--wayfinder-sz);
   background-size: contain;
+  background-repeat: no-repeat;
 
   cursor: pointer;
   -webkit-filter: drop-shadow(0px 0px 6px var(--platinum));
@@ -246,7 +247,8 @@ ol.steps > li {
 }
 
 .tooltip-trigger:hover::before,
-.tooltip-trigger:active::before {
+.tooltip-trigger:active::before,
+.tooltip-trigger:focus::before {
   opacity: 1;
   visibility: visible;
 }
@@ -255,8 +257,8 @@ ol.steps .gsheets-icon {
   background-image: url(./screengrabs/sheets-logo.png);
 }
 
-ol.steps .glitch-icon {
-  background-image: url(./screengrabs/glitch-logo.png);
+ol.steps .csb-icon {
+  background-image: url(./screengrabs/codesandbox-logo.png);
 }
 
 ol.steps .dr4db-icon {
@@ -307,6 +309,10 @@ img.sticky {
   margin-bottom: 0;
   padding: 0;
   border-radius: 0;
+}
+
+img.diagram:hover {
+  cursor: pointer;
 }
 
 /* ------------------------------- code blocks ------------------------------ */

@@ -56,13 +56,14 @@
           <li>Google Spreadsheet with your resume data</li>
           <li>
             The dynamic resume template AKA the webpage code (we'll be using
-            ours in Glitch, an online
+            ours in CodeSandbox, an online
             <a
               target="_blank"
               rel="noopener noreferrer external"
               href="https://www.geeksforgeeks.org/what-is-ide/"
               >IDE</a
-            >)
+            >. This project formerly ran on Glitch, before it ended project
+            hosting in July 2025.)
           </li>
           <li>
             Opensheet API by
@@ -87,12 +88,13 @@
           for work in early 2024. At that time, I was open to many different
           types of job titles and sectors, as I was trying to pivot my
           professional life away from serving monopoly capital. I couldn't rely
-          on time-pressed, ambivalent employers to decipher my eligibility
+          on time-pressed, ambivalent employers to assess my eligibility
           themselves, so I made a unique resume for each job that included only
           the most relevant work experiences, retold in the jargon of the target
           industry. For example, if a role required project management skills, I
           would make mention of my past project management internship and leave
-          out, say, my former part-time designer roles to make room on the page.
+          out, say, my former part-time service industry roles to make room on
+          the page.
         </p>
         <p>
           With the abysmal state of the job market, I soon grew tired of
@@ -100,28 +102,27 @@
           way. It was emotionally exhausting to put so much effort into a job
           application that would not even guarantee me the courtesy of a
           rejection email. I wanted a way to apply for jobs that was as nimble
-          and callous as the capitalist job market itself. I imagined a resume
-          that could shapeshift upon a button's click, while retaining as much
-          honesty as possible. My reveries turned to reality when I realized
-          such a thing was possible using just basic front-end programming.
+          and callous as the job market itself. I imagined a resume that could
+          shapeshift upon a button's click, while retaining as much honesty as
+          possible. This vision became reality once I realized such a thing was
+          possible using just basic front-end programming.
         </p>
         <p>
           The resulting template served me so well I shared it with some
           friends, who shared it with a few more friends. I'm sharing the source
           code and instructions for this project here today and for posterity as
-          a testament to its utility, but far more importantly, as a show of
-          solidarity to all those who seek work under a soul-corroding economic
-          system where neither wages, healthcare, nor housing are guaranteed to
-          any individual.
+          a testament to its utility, but far more importantly, in solidarity
+          with all those who seek work under a soul-corroding economic system
+          where neither wages, healthcare, nor housing are guaranteed to any
+          individual.
         </p>
         <p>
-          My purpose here is not about resistance, and it's not even about
-          manipulation, either, because there is no deception in making oneself
-          legible to a labor market that demanded we conform to its vernacular
-          in the first place. I'm just trying to minimize the amount of menial
-          work we have to do in order to secure a bag so that less of our time,
-          attention, bodies, and spirits are consumed by the task of selling our
-          labor for a living.
+          My purpose here is not grandiose, nor is it manipulative, because
+          there is no deception in making oneself legible to a labor market that
+          demanded we contort ourselves to fit its standards in the first place.
+          I'm just trying to minimize the amount of menial work we have to do in
+          order to secure a bag so that less of our time, attention, bodies, and
+          spirits are consumed by the task of selling our labor for a living.
         </p>
         <p>With that, let's get into it.</p>
         <h2>Tutorial</h2>
@@ -168,6 +169,8 @@
               alt="a sketch demonstrating how unchecked rows in the spreadsheet do not show up in the template"
             />
             <span
+              role="button"
+              tabindex="0"
               class="tooltip-trigger gsheets-icon"
               data-tooltip="This icon indicates where we are for any given step. For this step, we're in the Google spreadsheet."
             ></span>
@@ -178,6 +181,8 @@
               save it as your own.
             </p>
             <span
+              role="button"
+              tabindex="0"
               class="tooltip-trigger gsheets-icon"
               data-tooltip="For this step, we're in the Google spreadsheet."
             ></span>
@@ -188,6 +193,8 @@
               can view the document.
             </p>
             <span
+              role="button"
+              tabindex="0"
               class="tooltip-trigger gsheets-icon"
               data-tooltip="For this step, we're in the Google spreadsheet."
             ></span>
@@ -196,33 +203,33 @@
             <p>
               Browse the templates below to decide which one you want to start
               with. When you decide, click the “use this template” button on the
-              page. This will open up a Glitch project with the template code
-              ready for use.
+              page. This will open up a CodeSandbox project with the template
+              code ready for use.
             </p>
             <div id="template-buttons">
-              <a target="_blank" href="/track_track/">track_track</a>
-              <a target="_blank" href="/cascadian/">cascadian</a>
-              <a target="_blank" href="/button_ups/">button_ups</a>
+              <a target="_blank" href="./track_track/">track_track</a>
+              <a target="_blank" href="./cascadian/">cascadian</a>
+              <a target="_blank" href="./button_ups/">button_ups</a>
             </div>
             <span
+              role="button"
+              tabindex="0"
               class="tooltip-trigger dr4db-icon"
               data-tooltip="For this step, we're on this website."
             ></span>
           </li>
           <li>
             <p>
-              On the Glitch project, click the “Remix your own” button below the
-              project preview. This will duplicate the template and allow you to
-              edit it.
+              Create an account on CodeSandbox. Once you're signed in, you
+              should see the option to "fork" the template in the upper
+              righthand corner. This will duplicate the template and allow you
+              to edit it.
             </p>
-            <aside>
-              If you don’t have a Glitch account set up, your project will
-              expire after 5 days. Create an account if you want to save your
-              progress.
-            </aside>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
           <li>
@@ -234,8 +241,10 @@
               the ID of your Google Spreadsheet.
             </p>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
           <li>
@@ -246,9 +255,11 @@
               characters between
               &quot;https://docs.google.com/spreadsheets/d/&quot; and
               &quot;/edit?usp=sharing&quot; in the URL. Replace all the
-              <code>tabURL</code>s in the Glitch file with this new string.
+              <code>tabURL</code>s in the CodeSandbox file with this new string.
             </p>
             <span
+              role="button"
+              tabindex="0"
               class="tooltip-trigger gsheets-icon"
               data-tooltip="For this step, we're in the Google spreadsheet."
             ></span>
@@ -278,21 +289,25 @@
               <code>sections</code> object as well.
             </aside>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
           <li>
             <p>
               There you have it! &#9786; Your spreadsheet is now hooked up to
-              your Glitch file. Try updating any data in the
+              your CodeSandbox file. Try updating any data in the
               <span class="green">green</span> cells in the spreadsheet and
-              refresh your Glitch site. If all's gone well, you should see your
-              new data appear in the template.
+              refresh your CodeSandbox site. If all's gone well, you should see
+              your new data appear in the template.
             </p>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
         </ol>
@@ -311,10 +326,12 @@
         </p>
         <ol class="steps">
           <li>
-            <p>Open the <code>index.html</code> in Glitch.</p>
+            <p>Open the <code>index.html</code> in CodeSandbox.</p>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
           <li>
@@ -326,8 +343,10 @@
               want on your resume.
             </p>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
         </ol>
@@ -454,6 +473,8 @@
               "publications").
             </p>
             <span
+              role="button"
+              tabindex="0"
               class="tooltip-trigger gsheets-icon"
               data-tooltip="For this step, we're in the Google spreadsheet."
             ></span>
@@ -466,8 +487,10 @@
               the section header on your resume template.
             </p>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
         </ol>
@@ -486,6 +509,8 @@
               capitalizing the first letter to keep things consistent.
             </p>
             <span
+              role="button"
+              tabindex="0"
               class="tooltip-trigger gsheets-icon"
               data-tooltip="For this step, we're in the Google spreadsheet."
             ></span>
@@ -495,8 +520,10 @@
               Go to the section that you updated in your <code>script.js</code>.
             </p>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
           <li>
@@ -508,8 +535,10 @@
               spreadsheet (i.e. <code>${row.Company}</code>).
             </p>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
         </ol>
@@ -550,6 +579,8 @@
               resume to be.
             </p>
             <span
+              role="button"
+              tabindex="0"
               class="tooltip-trigger gsheets-icon"
               data-tooltip="For this step, we're in the Google spreadsheet."
             ></span>
@@ -562,6 +593,8 @@
               checkboxes.
             </p>
             <span
+              role="button"
+              tabindex="0"
               class="tooltip-trigger gsheets-icon"
               data-tooltip="For this step, we're in the Google spreadsheet."
             ></span>
@@ -569,6 +602,8 @@
           <li>
             <p>Fill in the rest of the column headers as you desire.</p>
             <span
+              role="button"
+              tabindex="0"
               class="tooltip-trigger gsheets-icon"
               data-tooltip="For this step, we're in the Google spreadsheet."
             ></span>
@@ -579,6 +614,8 @@
               in the sheet. This tells the API what to call each column of data.
             </p>
             <span
+              role="button"
+              tabindex="0"
               class="tooltip-trigger gsheets-icon"
               data-tooltip="For this step, we're in the Google spreadsheet."
             ></span>
@@ -596,8 +633,10 @@
                 </code></pre>
               </div>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
           <li>
@@ -694,7 +733,7 @@
 });
             </code></pre>
           </div>
-          <span class="tooltip-trigger glitch-icon" data-tooltip="For this step, we're in the Glitch template."></span>
+          <span role="button" tabindex="0" class="tooltip-trigger csb-icon" data-tooltip="For this step, we're in the CodeSandbox template."></span>
           </li>
         </ul>
           </li>
@@ -708,8 +747,10 @@
               “instructions” tab would be 1, “experience” would be 2, and so on.
             </aside>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
           <li>
@@ -759,8 +800,10 @@
           </code></pre>
             </div>
             <span
-              class="tooltip-trigger glitch-icon"
-              data-tooltip="For this step, we're in the Glitch template."
+              role="button"
+              tabindex="0"
+              class="tooltip-trigger csb-icon"
+              data-tooltip="For this step, we're in the CodeSandbox template."
             ></span>
           </li>
         </ol>
