@@ -252,15 +252,15 @@ ol.steps > li {
 }
 
 ol.steps .gsheets-icon {
-  background-image: url(/screengrabs/sheets-logo.png);
+  background-image: url(./screengrabs/sheets-logo.png);
 }
 
 ol.steps .glitch-icon {
-  background-image: url(/screengrabs/glitch-logo.png);
+  background-image: url(./screengrabs/glitch-logo.png);
 }
 
 ol.steps .dr4db-icon {
-  background-image: url(/screengrabs/dynamic-resume-logo.png);
+  background-image: url(./screengrabs/dynamic-resume-logo.png);
 }
 
 span.green {
@@ -465,7 +465,7 @@ aside::after {
   margin: calc(var(--small-margin) * 6) auto;
 
   background-color: var(--sky-blue);
-  background-image: url(/screengrabs/stop.jpg);
+  background-image: url(./screengrabs/stop.jpg);
 
   background-size: cover;
   background-position: center;
